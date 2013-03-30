@@ -15,6 +15,13 @@
     src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
 }
 
+/* for Google maps integration */
+
+#map-canvas {
+    height: 400px;
+    width: 700px;
+}
+
 .clearfix {
     *zoom: 1;
 }

@@ -1,4 +1,4 @@
 KrantiWeb::Application.routes.draw do
-  root :to => 'reports#index'
-  resources :reports, :only => [:index]
+  root :to => 'pages#home'
+  resources :issues, :only => [:index]
 end
