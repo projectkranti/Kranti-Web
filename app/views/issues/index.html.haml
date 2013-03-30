@@ -1,3 +1,15 @@
 .row
-- @issues.each do |issue|
-  = render :partial => 'issue', :object => issue
+  %table.table.table-bordered
+    %thead
+      %tr
+        %th
+          Title
+        %th
+          Description
+    %tbody
+    - @issues.sort_by(&:created_at).reverse.each do |issue|
+      %tr
+        %td= issue.title
+        %td
+          %a{:href => issue.image_url}
+            =issue.description
