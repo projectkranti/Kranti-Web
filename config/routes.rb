@@ -1,3 +1,3 @@
 KrantiWeb::Application.routes.draw do
-  root :to => 'issues#index'
+  root :to => 'reports#index'
 end
