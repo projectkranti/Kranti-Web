@@ -1,0 +1,16 @@
+#recent-issues-slider.carousel.slide
+  %h2
+    Recent reports
+  .carousel-inner
+    - @recent_issues.each do |issue|
+      .item
+        %img{:src => issue.image_url, :width => '1000', :height => '500'}
+        .carousel-caption
+          %h4
+            = issue.title
+          %p
+            = issue.description
+  %a.carousel-control.left{:href => '#recent-issues-slider', :'data-slide' => 'prev' }
+    &lsaquo;
+  %a.carousel-control.right{:href => '#recent-issues-slider', :'data-slide' => 'next' }
+    &rsaquo;
