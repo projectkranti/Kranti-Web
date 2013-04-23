@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   end
 
-  def about
+  def how_it_works
 
   end
 end
